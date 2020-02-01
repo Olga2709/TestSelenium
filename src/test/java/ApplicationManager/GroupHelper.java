@@ -71,6 +71,7 @@ public class GroupHelper extends HelperBase {
         for (WebElement element : elements){
             String name = element.getText();
             GroupData group = new GroupData(name, null,null);
+            groups.add(group);
         }
         return groups;
     }

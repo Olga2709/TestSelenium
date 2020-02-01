@@ -14,7 +14,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
   <component name="ProjectId" id="1WwYqPykC0D7bEx3jrTNyCIRv2I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,7 +31,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -36,7 +41,7 @@
       <recent name="C:\Users\User\IdeaProjects\1\src\test\java\Drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GroupModification.testGroupModification">
+  <component name="RunManager" selected="JUnit.GroupCreationTest.testGroupCreation">
     <configuration name="GroupCreationTest.testGroupCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestSelenium-master" />
       <extension name="coverage">
@@ -121,10 +126,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GroupCreationTest.testGroupCreation" />
         <item itemvalue="JUnit.GroupModification.testGroupModification" />
         <item itemvalue="JUnit.GroupDeletionTest.testGroupeDeletion" />
         <item itemvalue="JUnit.Testpackage.testGroupeDeletion" />
-        <item itemvalue="JUnit.GroupCreationTest.testGroupCreation" />
         <item itemvalue="JUnit.Testpackage" />
       </list>
     </recent_temporary>
@@ -171,11 +176,11 @@
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state x="2200" y="76" key="#Testpackage/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580549237181" />
-    <state x="2333" y="197" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1580551685518">
+    <state x="2333" y="197" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1580556569340">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state x="413" y="121" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163392503" />
-    <state x="2333" y="197" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580551685518" />
+    <state x="2333" y="197" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580556569340" />
     <state x="2012" y="168" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1580551142592">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
@@ -208,30 +213,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="825" y="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1580062362558" />
-    <state width="1367" height="104" key="GridCell.Tab.0.bottom" timestamp="1580553537621">
+    <state x="2383" y="195" key="FileChooserDialogImpl" timestamp="1580555372382">
+      <screen x="1920" y="76" width="1366" height="728" />
+    </state>
+    <state x="2383" y="195" key="FileChooserDialogImpl/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580555372382" />
+    <state width="1367" height="104" key="GridCell.Tab.0.bottom" timestamp="1580556440292">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163398601" />
     <state width="1367" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580109909879" />
-    <state width="1367" height="104" key="GridCell.Tab.0.bottom/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580553537621" />
-    <state width="1367" height="104" key="GridCell.Tab.0.center" timestamp="1580553537620">
+    <state width="1367" height="104" key="GridCell.Tab.0.bottom/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580556440292" />
+    <state width="1367" height="104" key="GridCell.Tab.0.center" timestamp="1580556440292">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="185" key="GridCell.Tab.0.center/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163398600" />
     <state width="1367" height="185" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580109909879" />
-    <state width="1367" height="104" key="GridCell.Tab.0.center/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580553537620" />
-    <state width="1367" height="104" key="GridCell.Tab.0.left" timestamp="1580553537620">
+    <state width="1367" height="104" key="GridCell.Tab.0.center/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580556440292" />
+    <state width="1367" height="104" key="GridCell.Tab.0.left" timestamp="1580556440292">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="185" key="GridCell.Tab.0.left/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163398600" />
     <state width="1367" height="185" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580109909879" />
-    <state width="1367" height="104" key="GridCell.Tab.0.left/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580553537620" />
-    <state width="1367" height="104" key="GridCell.Tab.0.right" timestamp="1580553537621">
+    <state width="1367" height="104" key="GridCell.Tab.0.left/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580556440292" />
+    <state width="1367" height="104" key="GridCell.Tab.0.right" timestamp="1580556440292">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="185" key="GridCell.Tab.0.right/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163398600" />
     <state width="1367" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580109909879" />
-    <state width="1367" height="104" key="GridCell.Tab.0.right/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580553537621" />
+    <state width="1367" height="104" key="GridCell.Tab.0.right/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580556440292" />
     <state width="1367" height="232" key="GridCell.Tab.1.bottom" timestamp="1580069876062">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -252,14 +261,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="21" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1580062946202" />
-    <state x="2104" y="83" key="SettingsEditor" timestamp="1580549074721">
+    <state x="2104" y="83" key="SettingsEditor" timestamp="1580555374836">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
-    <state x="2104" y="83" key="SettingsEditor/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580549074721" />
+    <state x="2104" y="83" key="SettingsEditor/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580555374836" />
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580158055054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580158055054" />
+    <state x="2412" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580556745242">
+      <screen x="1920" y="76" width="1366" height="728" />
+    </state>
+    <state x="2412" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580556745242" />
     <state x="131" y="75" key="new project wizard" timestamp="1580062832061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
