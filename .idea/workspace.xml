@@ -3,25 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="733804ca-037f-4400-85a2-2c071bae6340" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ApplicationManager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApplicationManager/GroupHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testpackage/GroupDeletionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testpackage/GroupDeletionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testpackage/GroupCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testpackage/GroupCreationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testpackage/GroupModification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testpackage/GroupModification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ApplicationManager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ApplicationManager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ApplicationManager/ContactHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ApplicationManager/ContactHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ApplicationManager/GroupHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ApplicationManager/GroupHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ApplicationManager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ApplicationManager/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ApplicationManager/NavigationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ApplicationManager/NavigationHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ApplicationManager/SessionHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ApplicationManager/SessionHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Model/ContactData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Model/ContactData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Model/GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Model/GroupData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testpackage/ContactCreationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testpackage/ContactCreationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testpackage/ContactModification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testpackage/ContactModification.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Testpackage/GroupCreationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testpackage/GroupCreationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testpackage/GroupDeletionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testpackage/GroupDeletionTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Testpackage/GroupModification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testpackage/GroupModification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testpackage/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testpackage/TestBase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +51,7 @@
       <recent name="C:\Users\User\IdeaProjects\1\src\test\java\Drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GroupModification.testGroupModification">
+  <component name="RunManager" selected="JUnit.GroupCreationTest.testGroupCreation">
     <configuration name="GroupCreationTest.testGroupCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestSelenium-master" />
       <extension name="coverage">
@@ -147,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GroupModification.testGroupModification" />
         <item itemvalue="JUnit.GroupCreationTest.testGroupCreation" />
+        <item itemvalue="JUnit.GroupModification.testGroupModification" />
         <item itemvalue="JUnit.GroupDeletionTest.testGroupeDeletion" />
         <item itemvalue="JUnit.Testpackage.testGroupeDeletion" />
         <item itemvalue="JUnit.Testpackage" />
@@ -178,7 +167,19 @@
       <option name="presentableId" value="Default" />
       <updated>1580062314113</updated>
     </task>
+    <task id="LOCAL-00001" summary="GroupModification updated with list comparison">
+      <created>1580571888994</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580571888995</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="GroupModification updated with list comparison" />
+    <option name="LAST_COMMIT_MESSAGE" value="GroupModification updated with list comparison" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2200" y="79" key="#GroupCreationTest.testGroupCreation" timestamp="1580549221504">
@@ -206,19 +207,19 @@
     </state>
     <state x="413" y="121" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163392503" />
     <state x="2333" y="197" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580556569340" />
-    <state x="2012" y="168" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1580562808410">
+    <state x="2012" y="168" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1580597411679">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
-    <state x="2012" y="168" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580562808410" />
+    <state x="2012" y="168" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597411679" />
     <state x="422" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580063561172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="422" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1580063561172" />
-    <state x="2408" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1580565785114">
+    <state x="2408" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1580595761760">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state x="488" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1580073115718" />
-    <state x="2408" y="158" key="#com.intellij.ide.util.MemberChooser/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580565785114" />
+    <state x="2408" y="158" key="#com.intellij.ide.util.MemberChooser/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580595761760" />
     <state x="2451" y="330" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580548784161">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
@@ -239,58 +240,66 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="825" y="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1580062362558" />
+    <state x="566" y="115" key="CommitChangelistDialog2" timestamp="1580571887936">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="566" y="115" key="CommitChangelistDialog2/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571887936" />
     <state x="2383" y="195" key="FileChooserDialogImpl" timestamp="1580555372382">
       <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state x="2383" y="195" key="FileChooserDialogImpl/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580555372382" />
-    <state width="1921" height="356" key="GridCell.Tab.0.bottom" timestamp="1580571794765">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1367" height="133" key="GridCell.Tab.0.bottom" timestamp="1580597810585">
+      <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163398601" />
     <state width="1367" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580109909879" />
     <state width="1921" height="356" key="GridCell.Tab.0.bottom/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571794765" />
-    <state width="1367" height="284" key="GridCell.Tab.0.bottom/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580564434919" />
-    <state width="1921" height="356" key="GridCell.Tab.0.center" timestamp="1580571794765">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1367" height="133" key="GridCell.Tab.0.bottom/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597810585" />
+    <state width="1367" height="133" key="GridCell.Tab.0.center" timestamp="1580597810584">
+      <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="185" key="GridCell.Tab.0.center/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163398600" />
     <state width="1367" height="185" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580109909879" />
     <state width="1921" height="356" key="GridCell.Tab.0.center/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571794765" />
-    <state width="1367" height="284" key="GridCell.Tab.0.center/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580564434918" />
-    <state width="1921" height="356" key="GridCell.Tab.0.left" timestamp="1580571794764">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1367" height="133" key="GridCell.Tab.0.center/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597810584" />
+    <state width="1367" height="133" key="GridCell.Tab.0.left" timestamp="1580597810584">
+      <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="185" key="GridCell.Tab.0.left/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163398600" />
     <state width="1367" height="185" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580109909879" />
     <state width="1921" height="356" key="GridCell.Tab.0.left/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571794764" />
-    <state width="1367" height="284" key="GridCell.Tab.0.left/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580564434918" />
-    <state width="1921" height="356" key="GridCell.Tab.0.right" timestamp="1580571794765">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1367" height="133" key="GridCell.Tab.0.left/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597810584" />
+    <state width="1367" height="133" key="GridCell.Tab.0.right" timestamp="1580597810584">
+      <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="185" key="GridCell.Tab.0.right/0.0.1366.728/-1920.52.1920.1040@0.0.1366.728" timestamp="1580163398600" />
     <state width="1367" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580109909879" />
     <state width="1921" height="356" key="GridCell.Tab.0.right/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571794765" />
-    <state width="1367" height="284" key="GridCell.Tab.0.right/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580564434918" />
-    <state width="1921" height="356" key="GridCell.Tab.1.bottom" timestamp="1580571794766">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1367" height="133" key="GridCell.Tab.0.right/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597810584" />
+    <state width="1367" height="231" key="GridCell.Tab.1.bottom" timestamp="1580597364000">
+      <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="232" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580069876062" />
     <state width="1921" height="356" key="GridCell.Tab.1.bottom/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571794766" />
-    <state width="1921" height="356" key="GridCell.Tab.1.center" timestamp="1580571794765">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1367" height="231" key="GridCell.Tab.1.bottom/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597364000" />
+    <state width="1367" height="231" key="GridCell.Tab.1.center" timestamp="1580597364000">
+      <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="232" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580069876062" />
     <state width="1921" height="356" key="GridCell.Tab.1.center/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571794765" />
-    <state width="1921" height="356" key="GridCell.Tab.1.left" timestamp="1580571794765">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1367" height="231" key="GridCell.Tab.1.center/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597364000" />
+    <state width="1367" height="231" key="GridCell.Tab.1.left" timestamp="1580597364000">
+      <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="232" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580069876062" />
     <state width="1921" height="356" key="GridCell.Tab.1.left/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571794765" />
-    <state width="1921" height="356" key="GridCell.Tab.1.right" timestamp="1580571794766">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1367" height="231" key="GridCell.Tab.1.left/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597364000" />
+    <state width="1367" height="231" key="GridCell.Tab.1.right" timestamp="1580597364000">
+      <screen x="1920" y="76" width="1366" height="728" />
     </state>
     <state width="1367" height="232" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580069876062" />
     <state width="1921" height="356" key="GridCell.Tab.1.right/1920.76.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1580571794766" />
+    <state width="1367" height="231" key="GridCell.Tab.1.right/1920.76.1366.728/0.0.1920.1040@1920.76.1366.728" timestamp="1580597364000" />
     <state x="213" y="21" key="Maven.ArtifactSearchDialog" timestamp="1580062946202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

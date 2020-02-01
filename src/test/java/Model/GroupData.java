@@ -3,12 +3,12 @@ package Model;
 import java.util.Objects;
 
 public class GroupData {
-    private String id;
+    private int id;
     private final String name;
     private final String header;
     private final String footer;
 
-    public GroupData(String id, String name, String header, String footer) {
+    public GroupData(int id, String name, String header, String footer) {
         this.name = name;
         this.id = id;
         this.header = header;
@@ -16,12 +16,12 @@ public class GroupData {
     }
     public GroupData(String name, String header, String footer) {
         this.name = name;
-        this.id = null;
+        this.id = 0;
         this.header = header;
         this.footer = footer;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -50,38 +50,28 @@ public class GroupData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         GroupData groupData = (GroupData) o;
+
+
         return Objects.equals(id, groupData.id) &&
                 Objects.equals(name, groupData.name);
+
+//        if (id !=groupData.id) return false;
+//        return name != null ? name.equals(groupData.name) : groupData.name == null;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name);
+        int result = id;
+        result = 31 * result + (name != null ? name.hashCode(): 0);
+        return  result;
+
+//        return Objects.hash(id, name);
     }
 }
 
 
 
-
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(id, name);
-//    }
-//    @Override
-//    public String toString() {
-//        return "GropData{" + "id=' " +id +
-//                "name'" + name + '\'' +
-//                " }";
-//    }
-//
-//    @Override
-//    public boolean equals(Object obj) {
-//        if (this==obj) return true;
-//        if (obj == null || getClass()! = obj.getClass()) return false;
-//
-//        GroupData groupData = (GroupData) obj;
-//        if (id ! = null ? !id.equals(groupData.id))
-//
-//        return name! = null ? name.equals(groupData.name) : groupData.name==null;
-//    }
-//}
