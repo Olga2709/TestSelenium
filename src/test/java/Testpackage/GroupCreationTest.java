@@ -3,11 +3,8 @@ package Testpackage;
 import Model.GroupData;
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.util.HashSet;
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 
 public class GroupCreationTest extends TestBase {
 
@@ -31,16 +28,20 @@ public class GroupCreationTest extends TestBase {
                 app.getGroupHelper().returntoGroupPage();
                 List<GroupData> after = app.getGroupHelper().getGroupList();
                 Assert.assertEquals(after.size(), before.size() + 1);
+//использование компаратора
+//                int max = 0;
+//                for (GroupData g : after) {
+//                    if (g.getId() > max) {
+//                        max = g.getId();
+//                    }
+//                }
 
-                int max = 0;
-                for (GroupData g : after) {
-                    if (g.getId() > max) {
-                        max = g.getId();
-                    }
-                }
+                //использования лямбда выражений
+
+              //  Comparator<? super GroupData> byId = (Comparator<GroupData>) (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
+
+                group.setId(after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
                 before.add(group);
-                group.setId(max);
-
                 Assert.assertEquals( new HashSet<Object>(before), new HashSet<Object>(after));
 
         }
