@@ -21,7 +21,8 @@ public class GroupCreationTest extends TestBase {
                 app.goTo().groupPage();
                 List<GroupData> before = app.group().list();
                 app.group().initGroupCreation();
-                GroupData group = new GroupData("Third", null, null);
+                //using fluent interfaces
+                GroupData group = new GroupData().withName("Test2");
                 app.group().fillGroupForm(group);
                 app.group().submitGroupForm();
                 app.group().returntoGroupPage();
