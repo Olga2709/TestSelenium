@@ -1,23 +1,22 @@
 package Testpackage;
 import ApplicationManager.ApplicationManager;
-import org.junit.After;
-import org.junit.Before;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 public class TestBase {
 //создалась ссылка на обьект типа апликейшнменеджер
-    protected final ApplicationManager app = new ApplicationManager();
+    protected static final ApplicationManager app = new ApplicationManager();
 
-    @Before
+    @BeforeSuite
     public void setUp() throws Exception {
-
         app.init();
     }
 
-    @After
-            public void tearDown () {
+    @AfterSuite
+    public void tearDown () {
         app.stop();
     }
-
     public ApplicationManager getApp() {
         return app;
     }

@@ -1,10 +1,10 @@
 package ApplicationManager;
 
 import Model.ContactData;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class ContactHelper extends HelperBase {
 

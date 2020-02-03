@@ -2,23 +2,20 @@ package Testpackage;
 
 import Model.ContactData;
 import Model.GroupData;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class ContactModification extends TestBase {
-    @Test
+
+    @Test(enabled = false)
     public void testContactModification() {
-     app.getNavigationHelper().gotoHomePage();
-        if (!app.getGroupHelper().isThereGroup()) {
-            app.getGroupHelper().createGroup(new GroupData("Third", "Group", "Than"));
+     app.goTo().gotoHomePage();
+        if (!app.group().isThereGroup()) {
+            app.group().create(new GroupData("Third", "Group", "Than"));
         }
      app.getContactHelper().initContactModification();
      app.getContactHelper().fillContactForm(new ContactData("one","two","three", null), false);
      app.getContactHelper().submitContactModification();
      app.getContactHelper().returntoHomePage();
-
-
-
-
 
 
     }

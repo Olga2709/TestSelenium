@@ -50,10 +50,22 @@ public class GroupHelper extends HelperBase {
         click(By.name("update"));
     }
 
-    public void createGroup(GroupData group) {
+    public void create(GroupData group) {
         initGroupCreation();
         fillGroupForm(group);
         submitGroupForm();
+        returntoGroupPage();
+    }
+    public void modify(int index, GroupData group) {
+        selectGroup(index);
+        initGroupModofocation();
+        fillGroupForm(group);
+        submitGroupModification();
+        returntoGroupPage();
+    }
+    public void delete(int index) {
+        selectGroup(index);
+        deleteGroup();
         returntoGroupPage();
     }
 
@@ -65,7 +77,7 @@ public class GroupHelper extends HelperBase {
         return driver.findElements(By.name("selected[]")).size();
     }
 //реализуем СПИСОК
-    public List<GroupData> getGroupList() {
+    public List<GroupData> list() {
         List<GroupData> groups = new ArrayList<GroupData>();
         List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
         for (WebElement element : elements){
