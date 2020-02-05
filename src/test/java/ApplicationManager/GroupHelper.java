@@ -50,6 +50,7 @@ public class GroupHelper extends HelperBase {
         initGroupCreation();
         fillGroupForm(group);
         submitGroupForm();
+        groupCash = null;
         returntoGroupPage();
     }
     public void modify( GroupData group) {
@@ -57,11 +58,13 @@ public class GroupHelper extends HelperBase {
         initGroupModofocation();
         fillGroupForm(group);
         submitGroupModification();
+        groupCash = null;
         returntoGroupPage();
     }
     public void deleted(GroupData group) {
         selectGroupById(group.getId());
         deleteGroup();
+        groupCash = null;
         returntoGroupPage();
     }
     public boolean isThereGroup() {
@@ -70,6 +73,10 @@ public class GroupHelper extends HelperBase {
     public int getGroupCount() {
         return driver.findElements(By.name("selected[]")).size();
     }
+
+    private Groups groupCash = null;
+
+
 //    public List <GroupData> list() {
 //        List<GroupData> groups = new ArrayList<GroupData>();
 //        List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
@@ -82,13 +89,16 @@ public class GroupHelper extends HelperBase {
 //    }
 
     public Groups all() {
-       Groups groups= new Groups();
+        if (groupCash !=null){
+            return new Groups(groupCash);
+        }
+        groupCash = new Groups();
         List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
         for (WebElement element : elements){
             String name = element.getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            groups.add(new GroupData().withId(id).withName(name));
+            groupCash.add(new GroupData().withId(id).withName(name));
         }
-        return groups;
+        return new Groups(groupCash);
     }
 }
