@@ -1,12 +1,13 @@
 package ApplicationManager;
 
 import Model.GroupData;
+import Model.Groups;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.lang.management.GarbageCollectorMXBean;
+import java.util.*;
 
 public class GroupHelper extends HelperBase {
 
@@ -32,20 +33,15 @@ public class GroupHelper extends HelperBase {
     public void initGroupCreation() {
         click(By.xpath("//input[@name='new']"));
     }
-
     public void deleteGroup() {
         click(By.name("delete"));
     }
-
-    public void selectGroup(int index) {
-        driver.findElements(By.name("selected[]")).get(index).click();
-
+    public void selectGroupById(int id) {
+        driver.findElement(By.cssSelector("input[value='"+ id +"']")).click();
     }
-
     public void initGroupModofocation() {
         click(By.name("edit"));
     }
-
     public void submitGroupModification() {
         click(By.name("update"));
     }
@@ -56,29 +52,37 @@ public class GroupHelper extends HelperBase {
         submitGroupForm();
         returntoGroupPage();
     }
-    public void modify(int index, GroupData group) {
-        selectGroup(index);
+    public void modify( GroupData group) {
+        selectGroupById(group.getId());
         initGroupModofocation();
         fillGroupForm(group);
         submitGroupModification();
         returntoGroupPage();
     }
-    public void delete(int index) {
-        selectGroup(index);
+    public void deleted(GroupData group) {
+        selectGroupById(group.getId());
         deleteGroup();
         returntoGroupPage();
     }
-
     public boolean isThereGroup() {
         return isElementPresent(By.name("selected[]"));
     }
-
     public int getGroupCount() {
         return driver.findElements(By.name("selected[]")).size();
     }
-//реализуем СПИСОК
-    public List<GroupData> list() {
-        List<GroupData> groups = new ArrayList<GroupData>();
+//    public List <GroupData> list() {
+//        List<GroupData> groups = new ArrayList<GroupData>();
+//        List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
+//        for (WebElement element : elements){
+//            String name = element.getText();
+//            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+//            groups.add(new GroupData().withId(id).withName(name));
+//        }
+//        return groups;
+//    }
+
+    public Groups all() {
+       Groups groups= new Groups();
         List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
         for (WebElement element : elements){
             String name = element.getText();
