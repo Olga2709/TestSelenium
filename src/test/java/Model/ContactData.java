@@ -1,43 +1,77 @@
 package Model;
 
+import java.io.File;
+
 public class ContactData {
 
-    private final String name;
-    private final String surname;
-    private final String surname2;
-    private String group;
+    private String firstname;
+    private  String lastname;
+    private String homePhone;
+    private String mobilePhone;
+    private String workPhone;
+    private int id =Integer.MAX_VALUE;
+    private String allPhones;
+    private File photo;
 
-
-    public ContactData(String name, String surname, String surname2, String group ) {
-        this.name = name;
-        this.surname = surname;
-        this.surname2 = surname2;
-        this.group = group;
+    public File getPhoto() {
+        return photo;
     }
 
-//    public static String getFirstName() {return name;
-//    }
-//
-//    public static String getLastName() {
-//    }
-//
-//    public static String getMiddleName() {
-//    }
-
-    public  String getFirstName() {
-        return name;
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
     }
 
-    public  String getLastName() {
-        return surname;
+    public ContactData withId (int id) {
+        this.id = id;
+        return this;
     }
 
-    public String getMiddleName() {
-        return surname2;
+    public ContactData withFirstname (String firstname) {
+        this.firstname = firstname;
+        return this;
+    }
+    public ContactData withLastname (String lastname) {
+        this.lastname = lastname;
+        return this;
+    }
+    public String getFirstname() {
+        return firstname;
     }
 
-    public String getGroup() {
-        return group;
+    public String getLastname() {
+        return lastname;
+    }
+
+    public String getHomePhone() {
+        return homePhone;
+    }
+    public ContactData withHomePhone(String homePhone){
+        this.homePhone = homePhone;
+        return this;
+    }
+    public String getMobilePhone() {
+        return mobilePhone;
+    }
+    public ContactData withMobilePhone(String mobilePhone){
+        this.mobilePhone = mobilePhone;
+        return this;
+    }
+    public String getWorkPhone() {
+        return workPhone;
+    }
+    public ContactData withWorkPhone(String workPhone){
+     this.workPhone = workPhone;
+     return this;
+    }
+
+    public String getAllPhones() { return allPhones;}
+    public ContactData withAllPhones (String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
+    public int getId() {
+        return id;
     }
 }
 

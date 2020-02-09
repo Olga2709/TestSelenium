@@ -1,12 +1,9 @@
 package ApplicationManager;
-
 import Model.GroupData;
 import Model.Groups;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import java.lang.management.GarbageCollectorMXBean;
 import java.util.*;
 
 public class GroupHelper extends HelperBase {

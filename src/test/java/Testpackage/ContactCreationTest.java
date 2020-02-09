@@ -3,15 +3,20 @@ package Testpackage;
 import Model.ContactData;
 import org.testng.annotations.Test;
 
+import java.io.File;
+
 public class ContactCreationTest extends TestBase
 {
 
-    @Test(enabled = false)
+    @Test()
     public void testContactCreation() {
-       app.getContactHelper().initContactCreation();
-       app.getContactHelper().fillContactForm(new ContactData("Olga ", "Ivanova", "Shvager", "123"), true);
-       app.getContactHelper().submitContactCreation();
-       app.getContactHelper().returntoHomePage();
+        ContactData contact = new ContactData();
+       app.contact().initContactCreation(contact.getId());
+        File photo = new File("src/test/java/resources/manager.png");
+        app.contact().fillContactForm(
+               new ContactData().withFirstname("hvj,bb nvbnm").withLastname("bgjhbjvghb").withPhoto(photo));
+       app.contact().submitContactCreation();
+       app.contact().returntoHomePage();
 
     }
 }
