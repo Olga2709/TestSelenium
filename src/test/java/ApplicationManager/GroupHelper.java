@@ -5,28 +5,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.*;
-
 public class GroupHelper extends HelperBase {
-
 //супер - это обращение к конструктору базового класса
     public GroupHelper(FirefoxDriver driver) {
         super(driver);
     }
-
     public void returntoGroupPage() {
         click(By.xpath("//a[contains(text(),'group page')]"));
     }
-
     public void submitGroupForm() {
         click(By.name("submit"));
     }
-
     public void fillGroupForm(GroupData groupData) {
         type(By.name("group_name"), groupData.getName());
         type(By.name("group_header"), groupData.getHeader());
         type(By.name("group_footer"), groupData.getFooter());
     }
-
     public void initGroupCreation() {
         click(By.xpath("//input[@name='new']"));
     }
@@ -42,7 +36,6 @@ public class GroupHelper extends HelperBase {
     public void submitGroupModification() {
         click(By.name("update"));
     }
-
     public void create(GroupData group) {
         initGroupCreation();
         fillGroupForm(group);

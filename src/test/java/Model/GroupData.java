@@ -1,9 +1,13 @@
 package Model;
 
-import java.util.Objects;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
+import java.util.Objects;
+@XStreamAlias("group")
 public class GroupData {
     //создадим сеттеры для переменных
+    @XStreamOmitField
     private int id =Integer.MAX_VALUE;;
     private  String name;
     private  String header;
@@ -48,7 +52,6 @@ public class GroupData {
     public GroupData withId(int id) {
         this.id = id;
         return this;
-
     }
     public GroupData withName(String name) {
         this.name = name;
